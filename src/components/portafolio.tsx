@@ -37,12 +37,12 @@ const PORTFOLIO_CONFIG = {
     name: "Helen Tilaguy",
     role: "Diseñadora gráfica Audiovisual",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600",
-    aboutShort: "Director Creativo y Diseñador Gráfico con más de 8 años de experiencia creando identidades visuales premium y experiencias digitales sofisticadas para marcas líderes en todo el mundo.",
+    aboutShort: "Diseñadora Gráfica y Audiovisual con experiencia especializada en animación 3D, motion graphics y edición de video. Apasionada por la narrativa visual, con dominio técnico en herramientas como Blender, Maya y Adobe Creative Suite para crear identidades dinámicas y contenido impactante para redes sociales y campañas corporativas.",
     bio: "Diseñadora gráfica y animadora de motion graphics con sólida experiencia en animación 3D y edición de video. Apasionada por la narrativa visual a través de diseños creativos e innovadores. Poseo habilidades avanzadas en software de diseño y animación, enfocándome en la originalidad y el impacto visual. Busco contribuir a equipos dinámicos que valoren la innovación, colaborando en proyectos que inspiren y sorprendan.",
     location: "Bogota, Colombia (Disponible para remoto internacional)",
     email: "Helentilaguyv@gmail.com",
     phone: "+57 3219620424",
-    resumeUrl: "#", // URL del archivo PDF del CV
+    resumeUrl: "/Helen-Tilaguy-CV.pdf",
     stats: [
       { label: "Años de Experiencia", value: "8+" },
       { label: "Proyectos Completados", value: "140+" },
@@ -681,7 +681,7 @@ export default function Portfolio() {
                 onMouseEnter={() => triggerCursorHover(true)}
                 onMouseLeave={() => triggerCursorHover(false)}
               >
-                Ver Mi Obra
+                Mis Trabajos
               </a>
               <a 
                 href={PORTFOLIO_CONFIG.personal.resumeUrl} 
