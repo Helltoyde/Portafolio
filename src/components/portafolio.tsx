@@ -253,6 +253,19 @@ const PORTFOLIO_CONFIG = {
         "https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&q=80&w=800"
       ],
       tools: ["Glyphs App", "Vector Refinement", "Kerning Optimization"]
+    },
+    {
+      id: "proj-8",
+      title: "Cubun - Videojuego WebGL",
+      category: "Motion & 3D",
+      year: "2024",
+      client: "Tostacazoth",
+      role: "Desarrolladora & Diseñadora",
+      coverImage: "https://img.itch.zone/aW1nLzQwOTI4NzcucG5n/347x500/FHCzVD.png",
+      description: "Juego WebGL de ficción interactiva desarrollado en Unity. Salva el ecosistema recolectando todos los cubun.",
+      embed: '<div style="position: relative; padding-bottom: 70.2%; height: 0; overflow: hidden;"><iframe frameborder="0" src="https://itch.io/embed-upload/2621579?color=ffffff" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"><a href="https://sebastianneuto.itch.io/cubun">Play Cubun on itch.io</a></iframe></div>',
+      gallery: [],
+      tools: ["Unity", "WebGL", "Interactive Fiction"]
     }
   ],
 
@@ -544,7 +557,6 @@ export default function Portfolio() {
           {/* Menú de Escritorio */}
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
             <a href="#about" onMouseEnter={() => triggerCursorHover(true)} onMouseLeave={() => triggerCursorHover(false)} className="hover:text-indigo-500 transition-colors">Sobre mí</a>
-            <a href="#services" onMouseEnter={() => triggerCursorHover(true)} onMouseLeave={() => triggerCursorHover(false)} className="hover:text-indigo-500 transition-colors">Servicios</a>
             <a href="#portfolio" onMouseEnter={() => triggerCursorHover(true)} onMouseLeave={() => triggerCursorHover(false)} className="hover:text-indigo-500 transition-colors">Proyectos</a>
             <a href="#experience" onMouseEnter={() => triggerCursorHover(true)} onMouseLeave={() => triggerCursorHover(false)} className="hover:text-indigo-500 transition-colors">Trayectoria</a>
             <a href="#contact" onMouseEnter={() => triggerCursorHover(true)} onMouseLeave={() => triggerCursorHover(false)} className="hover:text-indigo-500 transition-colors">Contacto</a>
@@ -552,19 +564,6 @@ export default function Portfolio() {
 
           {/* Acciones de Cabecera */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Botón Docs Informativo */}
-            <button
-              onClick={() => setShowDocs(!showDocs)}
-              className={`p-2 rounded-lg transition-all ${
-                darkMode ? 'bg-neutral-900 hover:bg-neutral-800 text-neutral-300' : 'bg-white hover:bg-neutral-100 text-neutral-700'
-              } border ${darkMode ? 'border-white/5' : 'border-black/5'} flex items-center gap-1.5 text-xs font-semibold`}
-              title="Instrucciones de Despliegue & Edición"
-              onMouseEnter={() => triggerCursorHover(true)}
-              onMouseLeave={() => triggerCursorHover(false)}
-            >
-              <Info className="w-4 h-4 text-indigo-400" />
-              <span>Ayuda Dev</span>
-            </button>
 
             {/* Alternar Tema */}
             <button 
@@ -622,18 +621,11 @@ export default function Portfolio() {
           } shadow-2xl backdrop-blur-lg`}>
             <div className="flex flex-col space-y-4">
               <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium py-1">Sobre mí</a>
-              <a href="#services" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium py-1">Servicios</a>
               <a href="#portfolio" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium py-1">Proyectos</a>
               <a href="#experience" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium py-1">Trayectoria</a>
               <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium py-1">Contacto</a>
               
               <div className="pt-4 border-t border-neutral-800 flex flex-col gap-3">
-                <button
-                  onClick={() => { setShowDocs(true); setMobileMenuOpen(false); }}
-                  className="w-full py-3 px-4 bg-indigo-600/10 text-indigo-400 rounded-lg text-sm font-semibold flex items-center justify-center gap-2"
-                >
-                  <Info className="w-4 h-4" /> Guía de Edición
-                </button>
                 <a 
                   href="#contact" 
                   onClick={() => setMobileMenuOpen(false)}
@@ -885,28 +877,9 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
             <div className="space-y-4">
-              <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase">Galería de Trabajos</span>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Obras de arte y proyectos premium</h2>
-              <p className="text-neutral-400 max-w-xl">Filtrados para revelar la excelencia creativa y de ejecución de cada campaña.</p>
-            </div>
-
-            {/* Filtros de Categorías */}
-            <div className="flex flex-wrap gap-2">
-              {categories.map((cat, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-all ${
-                    activeCategory === cat
-                      ? 'bg-indigo-600 text-white'
-                      : darkMode ? 'bg-neutral-900 hover:bg-neutral-800 text-neutral-300' : 'bg-white hover:bg-neutral-100 text-neutral-700'
-                  }`}
-                  onMouseEnter={() => triggerCursorHover(true)}
-                  onMouseLeave={() => triggerCursorHover(false)}
-                >
-                  {cat}
-                </button>
-              ))}
+              <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase">Proyectos</span>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Proyectos</h2>
+              <p className="text-neutral-400 max-w-xl">Una selección de mis trabajos en animación, motion graphics, diseño y edición de video.</p>
             </div>
           </div>
 
@@ -1045,6 +1018,11 @@ export default function Portfolio() {
                       ))}
                     </div>
                   </div>
+
+                  {/* Embed si existe */}
+                  {selectedProject.embed && (
+                    <div className="pt-4" dangerouslySetInnerHTML={{ __html: selectedProject.embed }} />
+                  )}
                 </div>
 
                 {/* Acciones del Lightbox */}
