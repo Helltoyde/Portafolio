@@ -740,20 +740,34 @@ export default function Portfolio() {
       {/* SECCIÓN SOBRE MÍ */}
       <section id="about" className="py-24 relative">
         <div className="max-w-7xl mx-auto px-6">
-          
-          {/* Texto de Filosofía Creativa */}
-          <div className="max-w-3xl space-y-6 text-left">
-            <div className="text-indigo-400 text-xs font-bold tracking-widest uppercase flex items-center gap-2">
-              <Heart className="w-4 h-4" /> Sobre Mí
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Texto de Filosofía Creativa */}
+            <div className="space-y-6 text-left">
+              <div className="text-indigo-400 text-xs font-bold tracking-widest uppercase flex items-center gap-2">
+                <Heart className="w-4 h-4" /> Sobre Mí
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+                Diseñando para marcas con <span className="font-serif-luxury italic text-indigo-400">alma</span> y propósito.
+              </h2>
+              <p className="text-lg text-neutral-400 leading-relaxed">
+                {PORTFOLIO_CONFIG.personal.bio}
+              </p>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-              Diseñando para marcas con <span className="font-serif-luxury italic text-indigo-400">alma</span> y propósito.
-            </h2>
-            <p className="text-lg text-neutral-400 leading-relaxed">
-              {PORTFOLIO_CONFIG.personal.bio}
-            </p>
-          </div>
 
+            {/* Video Loop */}
+            <div className="flex justify-center lg:justify-end">
+              <video 
+                src={`${import.meta.env.BASE_URL}hami.webm`}
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full max-w-md rounded-2xl border border-white/10"
+              />
+            </div>
+
+          </div>
         </div>
       </section>
 
