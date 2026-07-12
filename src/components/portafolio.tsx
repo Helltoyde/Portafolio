@@ -902,8 +902,8 @@ export default function Portfolio() {
                       src={project.coverImage} 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       muted
-                      onMouseEnter={(e) => e.target.play()}
-                      onMouseLeave={(e) => { e.target.pause(); e.target.currentTime = 0; }}
+                      onMouseEnter={(e) => (e.target as HTMLVideoElement).play()}
+                      onMouseLeave={(e) => { const v = e.target as HTMLVideoElement; v.pause(); v.currentTime = 0; }}
                     />
                   ) : (
                     <img 
@@ -994,8 +994,8 @@ export default function Portfolio() {
                           src={media} 
                           className="w-full h-full object-cover hover:scale-105 transition-all"
                           muted
-                          onMouseEnter={(e) => e.target.play()}
-                          onMouseLeave={(e) => { e.target.pause(); e.target.currentTime = 0; }}
+                          onMouseEnter={(e) => (e.target as HTMLVideoElement).play()}
+                          onMouseLeave={(e) => { const v = e.target as HTMLVideoElement; v.pause(); v.currentTime = 0; }}
                         />
                       ) : (
                         <img src={media} alt={`Visualización ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-all" />
