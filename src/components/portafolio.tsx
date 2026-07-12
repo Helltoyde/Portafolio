@@ -1105,7 +1105,7 @@ export default function Portfolio() {
 
               <div className="pt-6 space-y-3">
                 <h3 className="text-xl font-bold">Universo Digital</h3>
-                <p className="text-sm text-neutral-400">Sígueme en redes y plataformas de arte para ver mis bocetos diarios y experimentos interactivos.</p>
+                <p className="text-sm text-neutral-400">Sígueme en redes para ver mis proyectos de animación, motion clips y contenido audiovisual.</p>
                 <div className="grid grid-cols-2 gap-3 pt-4">
                   {PORTFOLIO_CONFIG.socials.map((social, i) => (
                     <a 
