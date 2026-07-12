@@ -212,18 +212,19 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: "proj-4",
-      title: "Velvet - Dirección de Arte Digital",
-      category: "UI/UX & Web",
-      year: "2025",
-      client: "Velvet Fashion Club",
-      role: "Director de Arte Digital",
-      coverImage: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80&w=800",
-      description: "Experiencia de comercio electrónico interactivo y editorial web para una marca de alta costura contemporánea. Animaciones fluidas, transiciones de pantalla premium y tipografías responsivas.",
+      title: "Carnelly",
+      category: "Motion & 3D",
+      year: "2022 - 2023",
+      client: "Carnelly",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}crnl/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Carnelly. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=800"
+        `${import.meta.env.BASE_URL}crnl/media-1.mp4`,
+        `${import.meta.env.BASE_URL}crnl/media-2.mp4`,
+        `${import.meta.env.BASE_URL}crnl/media-3.mp4`
       ],
-      tools: ["Figma Web Design", "Interactive Flow", "Motion Graphic Presets"]
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
       id: "proj-5",
