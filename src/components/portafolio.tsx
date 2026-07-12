@@ -164,19 +164,19 @@ const PORTFOLIO_CONFIG = {
   projects: [
     {
       id: "proj-1",
-      title: "Solitude - Identidad para Perfumería Francesa",
-      category: "Branding",
-      year: "2025",
-      client: "Solitude Paris",
-      role: "Director de Arte & Diseñador Principal",
-      coverImage: "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&q=80&w=800",
-      description: "Diseño integral de marca y envase de alta costura para una nueva fragancia minimalista. El concepto visual se centra en el vacío y la elegancia de la tipografía serif customizada tallada en cristal de alta pureza.",
+      title: "3 Cordilleras",
+      category: "Motion & 3D",
+      year: "2024 - 2025",
+      client: "3 Cordilleras",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Presentacion_2.webm`,
+      description: "Producción de motion graphics y edición de video para la marca 3 Cordilleras. Creación de contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&q=80&w=800"
+        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Presentacion_2.webm`,
+        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Navidad_3C.webm`,
+        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_ia.webm`
       ],
-      tools: ["Typography Custom", "Cinema 4D", "Adobe Illustrator", "Linen Hot Stamping"]
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
       id: "proj-2",
@@ -897,11 +897,21 @@ export default function Portfolio() {
               >
                 {/* Contenedor de Imagen */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
-                  <img 
-                    src={project.coverImage} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+                  {project.coverImage.endsWith('.webm') ? (
+                    <video 
+                      src={project.coverImage} 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      muted
+                      onMouseEnter={(e) => e.target.play()}
+                      onMouseLeave={(e) => { e.target.pause(); e.target.currentTime = 0; }}
+                    />
+                  ) : (
+                    <img 
+                      src={project.coverImage} 
+                      alt={project.title} 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  )}
                   {/* Overlay interactivo */}
                   <div className="absolute inset-0 bg-neutral-950/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="p-4 bg-white/15 backdrop-blur-md rounded-full text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
@@ -961,17 +971,35 @@ export default function Portfolio() {
               {/* Carrusel de Galería (Lado Izquierdo) */}
               <div className="lg:col-span-7 bg-neutral-950 p-6 flex flex-col justify-center gap-4">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-inner">
-                  <img 
-                    src={selectedProject.coverImage} 
-                    alt={selectedProject.title} 
-                    className="w-full h-full object-cover"
-                  />
+                  {selectedProject.coverImage.endsWith('.webm') ? (
+                    <video 
+                      src={selectedProject.coverImage} 
+                      controls
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <img 
+                      src={selectedProject.coverImage} 
+                      alt={selectedProject.title} 
+                      className="w-full h-full object-cover"
+                    />
+                  )}
                 </div>
                 {/* Muestras extras si existen */}
                 <div className="grid grid-cols-2 gap-4">
-                  {selectedProject.gallery.map((img, i) => (
+                  {selectedProject.gallery.map((media, i) => (
                     <div key={i} className="aspect-[4/3] rounded-xl overflow-hidden">
-                      <img src={img} alt={`Visualización ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-all" />
+                      {media.endsWith('.webm') ? (
+                        <video 
+                          src={media} 
+                          className="w-full h-full object-cover hover:scale-105 transition-all"
+                          muted
+                          onMouseEnter={(e) => e.target.play()}
+                          onMouseLeave={(e) => { e.target.pause(); e.target.currentTime = 0; }}
+                        />
+                      ) : (
+                        <img src={media} alt={`Visualización ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-all" />
+                      )}
                     </div>
                   ))}
                 </div>
