@@ -196,18 +196,19 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: "proj-3",
-      title: "Elysium - Packaging de Cosmética Orgánica",
-      category: "Packaging",
-      year: "2024",
-      client: "Elysium Botanicals",
-      role: "Diseñador de Packaging & Concepto",
-      coverImage: "https://images.unsplash.com/photo-1608248597481-496100c8c836?auto=format&fit=crop&q=80&w=800",
-      description: "Estudio conceptual para una marca de cosmética bio premium. Se diseñaron frascos de cerámica blanca reutilizables con etiquetas de papel de semilla plantable.",
+      title: "Caribeño",
+      category: "Motion & 3D",
+      year: "2022 - 2024",
+      client: "Caribeño",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}crb/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Caribeño. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        "https://images.unsplash.com/photo-1608248597481-496100c8c836?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&q=80&w=800"
+        `${import.meta.env.BASE_URL}crb/media-1.mp4`,
+        `${import.meta.env.BASE_URL}crb/media-2.mp4`,
+        `${import.meta.env.BASE_URL}crb/post.jpg`
       ],
-      tools: ["Ceramic Prototyping", "Sustainable Material Tech", "Minimalist Logo"]
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
       id: "proj-4",
@@ -897,7 +898,7 @@ export default function Portfolio() {
               >
                 {/* Contenedor de Imagen */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
-                  {project.coverImage.endsWith('.webm') ? (
+                  {(project.coverImage.endsWith('.webm') || project.coverImage.endsWith('.mp4')) ? (
                     <video 
                       src={project.coverImage} 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -973,7 +974,7 @@ export default function Portfolio() {
               {/* Carrusel de Galería (Lado Izquierdo) */}
               <div className="lg:col-span-7 bg-neutral-950 p-6 flex flex-col justify-center gap-4">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-inner">
-                  {selectedProject.coverImage.endsWith('.webm') ? (
+                  {selectedProject.coverImage.endsWith('.webm') || selectedProject.coverImage.endsWith('.mp4') ? (
                     <video 
                       src={selectedProject.coverImage} 
                       controls
@@ -991,7 +992,7 @@ export default function Portfolio() {
                 <div className="grid grid-cols-2 gap-4">
                   {selectedProject.gallery.map((media, i) => (
                     <div key={i} className="aspect-[4/3] rounded-xl overflow-hidden">
-                      {media.endsWith('.webm') ? (
+                      {media.endsWith('.webm') || media.endsWith('.mp4') ? (
                         <video 
                           src={media} 
                           className="w-full h-full object-cover hover:scale-105 transition-all"
