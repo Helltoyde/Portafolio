@@ -228,18 +228,19 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: "proj-5",
-      title: "Krypton - Campaña Expositiva 3D",
+      title: "Casablanca",
       category: "Motion & 3D",
-      year: "2023",
-      client: "Krypton Virtual Center",
-      role: "Artista 3D & Director de Arte",
-      coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
-      description: "Serie de renders de marca abstractos y posters impresos tridimensionales de neón para una exposición internacional sobre metaverso y escultura digital.",
+      year: "2022 - 2023",
+      client: "Casablanca",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}csbln/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Casablanca. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800"
+        `${import.meta.env.BASE_URL}csbln/media-1.mp4`,
+        `${import.meta.env.BASE_URL}csbln/media-2.mp4`,
+        `${import.meta.env.BASE_URL}csbln/media-3.mp4`
       ],
-      tools: ["Cinema 4D", "Octane Render", "Posters Tridimensionales", "Photoshop CC"]
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
       id: "proj-6",
