@@ -36,7 +36,7 @@ const PORTFOLIO_CONFIG = {
   personal: {
     name: "Helen Tilaguy",
     role: "Diseñadora gráfica Audiovisual",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600",
+    avatar: `${import.meta.env.BASE_URL}perfil.png`,
     aboutShort: "Diseñadora Gráfica y Audiovisual con experiencia especializada en animación 3D, motion graphics y edición de video. Apasionada por la narrativa visual, con dominio técnico en herramientas como Blender, Maya y Adobe Creative Suite para crear identidades dinámicas y contenido impactante para redes sociales y campañas corporativas.",
     bio: "Diseñadora gráfica y animadora de motion graphics con sólida experiencia en animación 3D y edición de video. Apasionada por la narrativa visual a través de diseños creativos e innovadores. Poseo habilidades avanzadas en software de diseño y animación, enfocándome en la originalidad y el impacto visual. Busco contribuir a equipos dinámicos que valoren la innovación, colaborando en proyectos que inspiren y sorprendan.",
     location: "Bogota, Colombia (Disponible para remoto internacional)",
@@ -44,10 +44,10 @@ const PORTFOLIO_CONFIG = {
     phone: "+57 3219620424",
     resumeUrl: "/Helen-Tilaguy-CV.pdf",
     stats: [
-      { label: "Años de Experiencia", value: "8+" },
-      { label: "Proyectos Completados", value: "140+" },
-      { label: "Premios de Diseño", value: "12" },
-      { label: "Clientes Satisfechos", value: "99%" }
+      { label: "Años de Experiencia", value: "5+" },
+      { label: "Proyectos de Animación", value: "80+" },
+      { label: "Videos Editados", value: "120+" },
+      { label: "Clientes Satisfechos", value: "100%" }
     ]
   },
   
@@ -58,10 +58,10 @@ const PORTFOLIO_CONFIG = {
   },
 
   socials: [
-    { name: "Behance", url: "https://behance.net", icon: "Layers" },
-    { name: "Dribbble", url: "https://dribbble.com", icon: "Sparkles" },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: "Linkedin" },
-    { name: "Instagram", url: "https://instagram.com", icon: "Instagram" }
+    { name: "Behance", url: "https://www.behance.net/Helen_Tilaguy", icon: "Layers" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/helentilaguy/", icon: "Linkedin" },
+    { name: "Instagram", url: "https://www.instagram.com/helen_til/", icon: "Instagram" },
+    { name: "ArtStation", url: "https://www.artstation.com/helentilaguy?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaATAwHRwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp9QH_9PfdugCdbEsqzChJ5jvUcEyNZeujtWKjXNxZEQOTqytdvd2r1IePp_O_aem_VS8jMpMm8Dch4dRBrskecg", icon: "Sparkles" }
   ],
 
   services: [
@@ -111,40 +111,47 @@ const PORTFOLIO_CONFIG = {
     experience: [
       {
         id: "exp-1",
-        role: "Director Creativo Senior",
-        company: "Studio Aura - Agencia de Lujo",
-        period: "2023 - Presente",
-        description: "Liderazgo de equipos de diseño gráfico para campañas internacionales de moda, joyería y automoción de alta gama. Rediseño completo de la identidad corporativa de 4 clientes Fortune 500."
+        role: "Diseñadora gráfica / Audiovisual",
+        company: "Chispa",
+        period: "2024 - 2026",
+        description: "Creación de contenido visual y audiovisual para redes sociales, campañas y proyectos internos. Edición de video, animaciones y piezas gráficas que fortalecieron la identidad visual de la marca."
       },
       {
         id: "exp-2",
-        role: "Diseñador Gráfico Lead",
-        company: "Vanguard Design Co.",
-        period: "2020 - 2023",
-        description: "Supervisión del equipo de diseño editorial y de packaging. Desarrollo de empaques sostenibles premiados en festivales internacionales de diseño como los Pentawards."
+        role: "Diseñador gráfico",
+        company: "Digiway",
+        period: "2022 - 2024",
+        description: "Como diseñadora gráfica, creé material POP para puntos de venta y diseñé empaques atractivos. Además, produje contenido audiovisual para redes sociales, incluyendo videos y animaciones, para aumentar la visibilidad de la marca."
       },
       {
         id: "exp-3",
-        role: "Diseñador Visual Junior & Mid",
-        company: "Nova Brand Agency",
-        period: "2018 - 2020",
-        description: "Creación de logotipos, directrices de marca, diseño de revistas premium e ilustración editorial para medios de comunicación líderes del sector creativo."
+        role: "Diseñador / Editor de video",
+        company: "Dude Media",
+        period: "2021 - 2022",
+        description: "Como editora de video, me especialicé en la edición de contenido audiovisual para redes sociales y YouTube, incluyendo motion graphics y animaciones de logo. También editaba audio, colaboraba en grabaciones y creaba piezas estáticas para las campañas visuales."
+      },
+      {
+        id: "exp-4",
+        role: "Diseñador / Animador",
+        company: "Visión Software",
+        period: "2020 - 2021",
+        description: "Como diseñadora, me especialicé en la creación de animaciones 2D y motion graphics para campañas internas, contribuyendo a la comunicación visual de la empresa."
       }
     ],
     education: [
       {
         id: "edu-1",
-        degree: "Máster en Dirección de Arte y Estrategia de Marca",
-        school: "Elisava School of Design - Barcelona",
-        period: "2017 - 2018",
-        description: "Especialización en creación de marcas premium y diseño conceptual aplicado a entornos físicos y digitales."
+        degree: "Animación 3D",
+        school: "Servicio Nacional de Aprendizaje (SENA)",
+        period: "2018 - 2020",
+        description: "Formación en animación 3D, modelado, texturización y técnicas de motion graphics."
       },
       {
         id: "edu-2",
-        degree: "Grado en Diseño Gráfico",
-        school: "Universidad de Artes Visuales",
-        period: "2013 - 2017",
-        description: "Formación integral en tipografía analógica y digital, historia del arte, fotografía editorial y composición visual."
+        degree: "Diseño y producción de modas",
+        school: "Corporación Unificada Nacional de Educación Superior CUN",
+        period: "2010 - 2016",
+        description: "Formación integral en diseño visual, composición, colorimetría y técnicas de producción."
       }
     ],
     certifications: [
@@ -526,7 +533,7 @@ export default function Portfolio() {
             onMouseLeave={() => triggerCursorHover(false)}
           >
             <span className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white text-sm font-black shadow-md shadow-indigo-500/20">
-              AV
+              HT
             </span>
             <span className="font-serif-luxury text-xl tracking-wider">
               {PORTFOLIO_CONFIG.personal.name.split(' ')[0]}
@@ -583,7 +590,7 @@ export default function Portfolio() {
               onMouseEnter={() => triggerCursorHover(true)}
               onMouseLeave={() => triggerCursorHover(false)}
             >
-              Trabajemos
+              Contáctame
             </a>
           </div>
 
@@ -658,7 +665,7 @@ export default function Portfolio() {
           <div className="lg:col-span-7 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold tracking-wider uppercase">
               <Sparkles className="w-3.5 h-3.5 animate-spin" style={{ animationDuration: '3s' }} />
-              Diseño de Identidad Premium & Vanguardia
+              Animación, Motion Graphics & Diseño Visual
             </div>
 
             <div className="space-y-4">
@@ -701,16 +708,6 @@ export default function Portfolio() {
                 Descargar CV
               </a>
             </div>
-
-            {/* Indicadores numéricos del Hero */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-neutral-800/20">
-              {PORTFOLIO_CONFIG.personal.stats.map((stat, i) => (
-                <div key={i} className="space-y-1">
-                  <div className="text-2xl md:text-3xl font-black text-indigo-400">{stat.value}</div>
-                  <div className="text-xs text-neutral-500 uppercase tracking-wider">{stat.label}</div>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Imagen Interactiva / Canvas Conceptual */}
@@ -738,248 +735,45 @@ export default function Portfolio() {
           </div>
         </div>
 
-        {/* Indicador de scroll flotante inferior */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-2 opacity-50">
-          <span className="text-xs tracking-widest uppercase">Saber más</span>
-          <div className="w-1 h-8 bg-neutral-800 rounded-full overflow-hidden relative">
-            <div className="absolute top-0 left-0 w-full h-1/2 bg-indigo-500 rounded-full animate-bounce" />
-          </div>
-        </div>
       </section>
-
-      {/* MARQUESINA CLIENTES DE PRESTIGIO */}
-      <section className={`py-12 border-y ${darkMode ? 'bg-neutral-950/40 border-white/5' : 'bg-neutral-100/50 border-neutral-200'} overflow-hidden`}>
-        <div className="flex whitespace-nowrap overflow-hidden relative">
-          <div className="flex animate-marquee space-x-16 text-2xl font-bold uppercase tracking-[0.2em] text-neutral-500/60">
-            {/* Repetimos elementos para scroll infinito */}
-            {[...PORTFOLIO_CONFIG.clients, ...PORTFOLIO_CONFIG.clients, ...PORTFOLIO_CONFIG.clients].map((client, idx) => (
-              <span key={idx} className="flex items-center gap-3">
-                <Sparkles className="w-4 h-4 text-indigo-500/40" />
-                {client.logo}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {}
 
       {/* SECCIÓN SOBRE MÍ */}
       <section id="about" className="py-24 relative">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-            
-            {/* Texto de Filosofía Creativa */}
-            <div className="lg:col-span-5 space-y-6">
-              <div className="text-indigo-400 text-xs font-bold tracking-widest uppercase flex items-center gap-2">
-                <Heart className="w-4 h-4" /> Sobre Mí
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Diseñando para marcas con <span className="font-serif-luxury italic text-indigo-400">alma</span> y propósito.
-              </h2>
-              <p className="text-lg text-neutral-400 leading-relaxed">
-                {PORTFOLIO_CONFIG.personal.bio}
-              </p>
-              <div className="p-6 rounded-2xl border bg-indigo-500/5 border-indigo-500/10 space-y-4">
-                <h4 className="font-bold text-lg flex items-center gap-2">
-                  <Award className="w-5 h-5 text-indigo-400" />
-                  Compromiso de calidad premium
-                </h4>
-                <p className="text-sm text-neutral-400 leading-relaxed">
-                  Cada identidad conceptual, packaging o diseño web se trata como una obra de arte independiente. Dedico el tiempo necesario para estudiar a tu competencia directa, pulir hasta el último vector y asegurar un lanzamiento inolvidable.
-                </p>
-              </div>
+          
+          {/* Texto de Filosofía Creativa */}
+          <div className="max-w-3xl space-y-6 text-left">
+            <div className="text-indigo-400 text-xs font-bold tracking-widest uppercase flex items-center gap-2">
+              <Heart className="w-4 h-4" /> Sobre Mí
             </div>
-
-            {/* Cuadrícula de Información & Redes */}
-            <div className="lg:col-span-7 space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                {/* Carta de Datos Personales */}
-                <div className={`p-8 rounded-2xl border ${darkMode ? 'bg-[#0f0f12] border-white/5' : 'bg-white border-black/5'} space-y-4 shadow-sm`}>
-                  <h3 className="text-xl font-bold">Datos de contacto</h3>
-                  <div className="space-y-3.5 text-sm text-neutral-400">
-                    <p className="flex justify-between border-b border-neutral-800/40 pb-2">
-                      <span className="font-semibold text-neutral-300">Ubicación</span>
-                      <span>{PORTFOLIO_CONFIG.personal.location.split(' ')[0]}</span>
-                    </p>
-                    <p className="flex justify-between border-b border-neutral-800/40 pb-2">
-                      <span className="font-semibold text-neutral-300">Email</span>
-                      <a href={`mailto:${PORTFOLIO_CONFIG.personal.email}`} className="text-indigo-400 hover:underline">{PORTFOLIO_CONFIG.personal.email}</a>
-                    </p>
-                    <p className="flex justify-between border-b border-neutral-800/40 pb-2">
-                      <span className="font-semibold text-neutral-300">Teléfono</span>
-                      <span>{PORTFOLIO_CONFIG.personal.phone}</span>
-                    </p>
-                    <p className="flex justify-between">
-                      <span className="font-semibold text-neutral-300">Idiomas</span>
-                      <span>Español, Inglés</span>
-                    </p>
-                  </div>
-                </div>
-
-                {/* Redes Sociales y enlaces externos */}
-                <div className={`p-8 rounded-2xl border ${darkMode ? 'bg-[#0f0f12] border-white/5' : 'bg-white border-black/5'} flex flex-col justify-between shadow-sm`}>
-                  <div className="space-y-3">
-                    <h3 className="text-xl font-bold">Universo Digital</h3>
-                    <p className="text-sm text-neutral-400">Sígueme en redes y plataformas de arte para ver mis bocetos diarios y experimentos interactivos.</p>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-3 pt-6">
-                    {PORTFOLIO_CONFIG.socials.map((social, i) => (
-                      <a 
-                        key={i}
-                        href={social.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`p-3 rounded-xl border text-center font-bold text-xs flex items-center justify-center gap-2 transition-all ${
-                          darkMode 
-                            ? 'bg-neutral-900 border-white/5 hover:bg-neutral-800 text-white' 
-                            : 'bg-neutral-50 border-black/5 hover:bg-neutral-100 text-neutral-900'
-                        }`}
-                        onMouseEnter={() => triggerCursorHover(true)}
-                        onMouseLeave={() => triggerCursorHover(false)}
-                      >
-                        {social.name === "Behance" && <Layers className="w-3.5 h-3.5 text-indigo-400" />}
-                        {social.name === "Dribbble" && <Sparkles className="w-3.5 h-3.5 text-pink-400" />}
-                        {social.name === "LinkedIn" && <Linkedin className="w-3.5 h-3.5 text-blue-400" />}
-                        {social.name === "Instagram" && <Instagram className="w-3.5 h-3.5 text-purple-400" />}
-                        <span>{social.name}</span>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-
-              </div>
-
-              {/* Carta Grande de Enfoque */}
-              <div className={`p-8 rounded-2xl border ${
-                darkMode ? 'bg-gradient-to-br from-[#0f0f12] to-neutral-900/40 border-white/5' : 'bg-white border-black/5'
-              } flex flex-col md:flex-row items-center gap-8 shadow-sm`}>
-                <div className="w-20 h-20 rounded-full bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center shrink-0">
-                  <Code className="w-10 h-10 text-indigo-400 animate-pulse" />
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-lg font-bold">Diseño Integrado & Front-End Inteligente</h4>
-                  <p className="text-sm text-neutral-400 leading-relaxed">
-                    A diferencia de los diseñadores puros, entiendo el desarrollo tecnológico. Domino CSS, React, Figma y las especificaciones de interfaz para que los programadores reciban activos listos para desplegar al pixel.
-                  </p>
-                </div>
-              </div>
-            </div>
-
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Diseñando para marcas con <span className="font-serif-luxury italic text-indigo-400">alma</span> y propósito.
+            </h2>
+            <p className="text-lg text-neutral-400 leading-relaxed">
+              {PORTFOLIO_CONFIG.personal.bio}
+            </p>
           </div>
+
         </div>
       </section>
 
-      {/* SECCIÓN SERVICIOS */}
-      <section id="services" className={`py-24 border-t ${darkMode ? 'bg-neutral-950/20 border-white/5' : 'bg-[#f4f4f7] border-neutral-200'} relative`}>
+      {/* SECCIÓN DE SOFTWARE */}
+      <section className="py-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-            <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase">Servicios Especializados</span>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Soluciones de diseño sofisticadas</h2>
-            <p className="text-neutral-400">Conceptos que transforman percepciones, aumentan ventas y construyen identidades inolvidables.</p>
+            <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase">Software</span>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Programas que domino</h2>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {PORTFOLIO_CONFIG.services.map((service, index) => (
-              <div 
-                key={service.id}
-                className={`p-8 rounded-3xl border transition-all duration-300 hover:-translate-y-2 group ${
-                  darkMode ? 'bg-[#0f0f12] border-white/5 hover:border-indigo-500/50' : 'bg-white border-black/5 hover:border-indigo-600/50'
-                } flex flex-col justify-between`}
-              >
-                <div className="space-y-6">
-                  {/* Número identificativo */}
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm font-bold text-neutral-500">0{index + 1}</span>
-                    <div className="p-3 rounded-2xl bg-indigo-500/5 text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-                      {index === 0 && <Layers className="w-6 h-6" />}
-                      {index === 1 && <Folder className="w-6 h-6" />}
-                      {index === 2 && <Sparkles className="w-6 h-6" />}
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <h3 className="text-2xl font-bold">{service.title}</h3>
-                    <p className="text-sm text-neutral-400 leading-relaxed">{service.description}</p>
-                  </div>
-                </div>
-
-                <div className="pt-8 flex flex-wrap gap-2">
-                  {service.tags.map((tag, i) => (
-                    <span key={i} className="text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full bg-neutral-800/30 text-neutral-400">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            {PORTFOLIO_CONFIG.skills.software.map((sw, index) => (
+              <div key={index} className={`p-4 rounded-xl border text-center ${darkMode ? 'bg-neutral-900/60 border-white/5' : 'bg-white border-black/5'}`}>
+                <div className="text-indigo-400 text-lg font-black mb-1">{sw.icon}</div>
+                <div className="text-xs font-bold text-neutral-300">{sw.name}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
-
-      { }
-
-      {/* SECCIÓN DE HABILIDADES & PROGRAMAS */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          
-          <div className="lg:col-span-5 space-y-6">
-            <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase">Destreza Técnica</span>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Especialidades & software creativo</h2>
-            <p className="text-neutral-400 leading-relaxed">
-              La creatividad necesita herramientas rigurosas. Equilibro la destreza analógica clásica, bocetos a mano y dirección artística con el dominio absoluto de la suite de Adobe Creative Cloud, 3D y diseño de interfaces en Figma.
-            </p>
-            <div className="flex flex-wrap gap-3 pt-4">
-              <span className="px-4 py-2 rounded-xl bg-neutral-800/40 text-sm font-bold border border-white/5">Vector Design</span>
-              <span className="px-4 py-2 rounded-xl bg-neutral-800/40 text-sm font-bold border border-white/5">Art Direction</span>
-              <span className="px-4 py-2 rounded-xl bg-neutral-800/40 text-sm font-bold border border-white/5">UI Systems</span>
-              <span className="px-4 py-2 rounded-xl bg-neutral-800/40 text-sm font-bold border border-white/5">Blender renders</span>
-            </div>
-          </div>
-
-          <div className="lg:col-span-7 space-y-8">
-            {/* Pestañas de habilidades */}
-            <div className="space-y-6">
-              <h3 className="text-xl font-bold text-indigo-400 flex items-center gap-2">
-                <Sparkles className="w-5 h-5" /> Especialidades Creativas
-              </h3>
-              <div className="space-y-4">
-                {PORTFOLIO_CONFIG.skills.creative.map((skill, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="flex justify-between text-sm font-semibold">
-                      <span>{skill.name}</span>
-                      <span>{skill.level}%</span>
-                    </div>
-                    <div className="h-2 w-full bg-neutral-800 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style={{ width: `${skill.level}%` }} />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Programas */}
-            <div className="pt-6 border-t border-neutral-800/40">
-              <h3 className="text-xl font-bold text-pink-400 flex items-center gap-2 mb-6">
-                <Layers className="w-5 h-5" /> Dominio de Programas
-              </h3>
-              <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
-                {PORTFOLIO_CONFIG.skills.software.map((sw, index) => (
-                  <div key={index} className={`p-4 rounded-xl border text-center ${darkMode ? 'bg-neutral-900/60 border-white/5' : 'bg-white border-black/5'}`}>
-                    <div className="text-indigo-400 text-lg font-black mb-1">{sw.icon}</div>
-                    <div className="text-xs font-bold text-neutral-300">{sw.name}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      {}
 
       {/* SECCIÓN TRAYECTORIA (EXPERIENCIA & EDUCACIÓN) */}
       <section id="experience" className={`py-24 border-t ${darkMode ? 'bg-neutral-950/20 border-white/5' : 'bg-white border-neutral-200'}`}>
@@ -987,7 +781,7 @@ export default function Portfolio() {
           <div className="text-center max-w-2xl mx-auto space-y-4 mb-16">
             <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase">Trayectoria Profesional</span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Experiencia y aprendizaje</h2>
-            <p className="text-neutral-400">Una historia de dedicación en agencias de renombre internacional y formación académica continua.</p>
+            <p className="text-neutral-400">Mi trayectoria en diseño gráfico, animación y producción audiovisual.</p>
             
             {/* Controles del Timeline Tabs */}
             <div className="flex justify-center gap-4 pt-6">
@@ -1010,16 +804,6 @@ export default function Portfolio() {
                 }`}
               >
                 Educación
-              </button>
-              <button 
-                onClick={() => setActiveTab("certifications")}
-                className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider border transition-all ${
-                  activeTab === "certifications" 
-                    ? 'bg-indigo-600 text-white border-indigo-600' 
-                    : darkMode ? 'bg-neutral-900 border-white/5 text-neutral-400 hover:text-white' : 'bg-neutral-50 border-black/5 text-neutral-700 hover:bg-neutral-100'
-                }`}
-              >
-                Premios y Certificados
               </button>
             </div>
           </div>
@@ -1279,49 +1063,6 @@ export default function Portfolio() {
 
       {}
 
-      {/* SECCIÓN TESTIMONIOS (Reviews Premium) */}
-      <section className={`py-24 border-t ${darkMode ? 'bg-neutral-950/20 border-white/5' : 'bg-neutral-100/50 border-neutral-200'}`}>
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto space-y-4 mb-16">
-            <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase">Opinión de Clientes</span>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Avalado por fundadores y directores de arte</h2>
-            <p className="text-neutral-400">Testimonios de colaboraciones reales diseñadas para elevar la comunicación corporativa.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {PORTFOLIO_CONFIG.testimonials.map((test) => (
-              <div 
-                key={test.id}
-                className={`p-8 rounded-3xl border ${
-                  darkMode ? 'bg-[#0f0f12] border-white/5' : 'bg-white border-black/5'
-                } relative flex flex-col justify-between space-y-8`}
-              >
-                {/* Comillas flotantes de lujo */}
-                <span className="absolute top-6 right-8 text-6xl font-serif-luxury text-indigo-500/20 leading-none">“</span>
-
-                <p className="text-base text-neutral-400 leading-relaxed italic z-10 relative">
-                  "{test.quote}"
-                </p>
-
-                <div className="flex items-center gap-4">
-                  <img 
-                    src={test.avatar} 
-                    alt={test.author} 
-                    className="w-12 h-12 rounded-full object-cover border border-white/10"
-                  />
-                  <div>
-                    <h4 className="font-bold text-white text-base">{test.author}</h4>
-                    <p className="text-xs text-neutral-500 uppercase tracking-wider">{test.position}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {}
-
       {/* SECCIÓN CONTACTO DIRECTO */}
       <section id="contact" className="py-24 relative overflow-hidden">
         {/* Luces de fondo del formulario */}
@@ -1336,10 +1077,6 @@ export default function Portfolio() {
             {/* Texto de Llamada al proyecto */}
             <div className="lg:col-span-5 space-y-6">
               <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase">Establece Contacto</span>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Comencemos el viaje creativo</h2>
-              <p className="text-neutral-400 leading-relaxed">
-                ¿Tienes un lanzamiento de producto, un rediseño de marca o necesitas dirección artística integral para tu agencia? Cuéntame sobre tu proyecto y hablemos de cómo llevarlo a un nivel premium.
-              </p>
               
               <div className="space-y-4 pt-4 text-sm text-neutral-400">
                 <div className="flex items-center gap-3">
@@ -1352,110 +1089,33 @@ export default function Portfolio() {
                 </div>
               </div>
 
-              {/* Tag de Respuesta rápida */}
-              <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center gap-3">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-xs text-emerald-400 font-bold uppercase tracking-wider">Tiempo de respuesta habitual: Menos de 24 horas</span>
+              <div className="pt-6 space-y-3">
+                <h3 className="text-xl font-bold">Universo Digital</h3>
+                <p className="text-sm text-neutral-400">Sígueme en redes y plataformas de arte para ver mis bocetos diarios y experimentos interactivos.</p>
+                <div className="grid grid-cols-2 gap-3 pt-4">
+                  {PORTFOLIO_CONFIG.socials.map((social, i) => (
+                    <a 
+                      key={i}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`p-3 rounded-xl border text-center font-bold text-xs flex items-center justify-center gap-2 transition-all ${
+                        darkMode 
+                          ? 'bg-neutral-900 border-white/5 hover:bg-neutral-800 text-white' 
+                          : 'bg-neutral-50 border-black/5 hover:bg-neutral-100 text-neutral-900'
+                      }`}
+                      onMouseEnter={() => triggerCursorHover(true)}
+                      onMouseLeave={() => triggerCursorHover(false)}
+                    >
+                        {social.name === "Behance" && <Layers className="w-3.5 h-3.5 text-indigo-400" />}
+                        {social.name === "LinkedIn" && <Linkedin className="w-3.5 h-3.5 text-blue-400" />}
+                        {social.name === "Instagram" && <Instagram className="w-3.5 h-3.5 text-purple-400" />}
+                        {social.name === "ArtStation" && <Sparkles className="w-3.5 h-3.5 text-green-400" />}
+                      <span>{social.name}</span>
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-
-            {/* Formulario Interactivo */}
-            <div className={`lg:col-span-7 p-8 md:p-10 rounded-3xl border ${
-              darkMode ? 'bg-[#0f0f12] border-white/5' : 'bg-white border-black/5'
-            } shadow-2xl`}>
-              <form onSubmit={handleContactSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  
-                  {/* Nombre */}
-                  <div className="space-y-2">
-                    <label className="text-xs font-bold uppercase tracking-widest text-neutral-400">Tu nombre completo</label>
-                    <input 
-                      type="text" 
-                      required
-                      placeholder="Ej. Sofia Loren"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3.5 rounded-xl bg-neutral-900/40 border border-white/5 text-white placeholder-neutral-600 focus:outline-none focus:border-indigo-500 text-sm transition-all"
-                    />
-                  </div>
-
-                  {/* Email */}
-                  <div className="space-y-2">
-                    <label className="text-xs font-bold uppercase tracking-widest text-neutral-400">Dirección de correo</label>
-                    <input 
-                      type="email" 
-                      required
-                      placeholder="Ej. sofia@loren.com"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3.5 rounded-xl bg-neutral-900/40 border border-white/5 text-white placeholder-neutral-600 focus:outline-none focus:border-indigo-500 text-sm transition-all"
-                    />
-                  </div>
-
-                </div>
-
-                {/* Selección de Presupuesto */}
-                <div className="space-y-3">
-                  <label className="text-xs font-bold uppercase tracking-widest text-neutral-400">Presupuesto Estimado</label>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    {["Premium (<5K€)", "Gold (5K-10K€)", "Signature (>10K€)", "Mensual/Retainer"].map((budgetOpt) => (
-                      <button
-                        key={budgetOpt}
-                        type="button"
-                        onClick={() => setFormData({ ...formData, budget: budgetOpt })}
-                        className={`py-3 px-1 rounded-lg text-[10px] font-bold uppercase tracking-wider border transition-all ${
-                          formData.budget === budgetOpt
-                            ? 'bg-indigo-600 border-indigo-600 text-white'
-                            : 'bg-neutral-900/40 border-white/5 text-neutral-400 hover:text-white'
-                        }`}
-                      >
-                        {budgetOpt}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Mensaje */}
-                <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase tracking-widest text-neutral-400">Detalles del encargo</label>
-                  <textarea 
-                    rows={4}
-                    required
-                    placeholder="Cuéntame sobre la identidad visual, el número de empaques o el plazo estimado..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-xl bg-neutral-900/40 border border-white/5 text-white placeholder-neutral-600 focus:outline-none focus:border-indigo-500 text-sm transition-all resize-none"
-                  />
-                </div>
-
-                {/* Botón enviar interactivo */}
-                <button
-                  type="submit"
-                  disabled={isSending || formSubmitted}
-                  className="w-full py-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold flex items-center justify-center gap-2 transition-all shadow-lg shadow-indigo-600/20 disabled:opacity-50"
-                  onMouseEnter={() => triggerCursorHover(true)}
-                  onMouseLeave={() => triggerCursorHover(false)}
-                >
-                  {isSending ? (
-                    <span className="flex items-center gap-2">
-                      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                      </svg>
-                      Transmitiendo idea...
-                    </span>
-                  ) : formSubmitted ? (
-                    <span className="flex items-center gap-2">
-                      <Check className="w-5 h-5 text-emerald-400" /> ¡Enviado con Éxito! Te escribiré pronto.
-                    </span>
-                  ) : (
-                    <span className="flex items-center gap-2">
-                      <Send className="w-4 h-4" /> Enviar mensaje premium
-                    </span>
-                  )}
-                </button>
-
-              </form>
             </div>
 
           </div>
@@ -1469,7 +1129,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center space-x-2.5">
             <span className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white text-sm font-black shadow-md">
-              AV
+              HT
             </span>
             <span className="font-serif-luxury text-xl tracking-wider text-white">
               {PORTFOLIO_CONFIG.personal.name}
@@ -1477,7 +1137,7 @@ export default function Portfolio() {
           </div>
 
           <p className="text-xs text-neutral-500">
-            © {new Date().getFullYear()} {PORTFOLIO_CONFIG.personal.name}. Todos los derechos reservados. Diseñado bajo estándares de vanguardia de Awwwards.
+            © {new Date().getFullYear()} {PORTFOLIO_CONFIG.personal.name}. Todos los derechos reservados.
           </p>
 
           <div className="flex items-center space-x-4">
