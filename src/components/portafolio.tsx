@@ -97,9 +97,13 @@ const PORTFOLIO_CONFIG = {
     software: [
       { name: "Adobe Illustrator", level: 98, icon: "Ai" },
       { name: "Adobe Photoshop", level: 95, icon: "Ps" },
-      { name: "Adobe InDesign", level: 90, icon: "Id" },
-      { name: "Figma (UI/UX Design)", level: 88, icon: "Fg" },
-      { name: "After Effects & Cinema 4D", level: 75, icon: "Ae" }
+      { name: "Adobe Premiere Pro", level: 90, icon: "Pr" },
+      { name: "Adobe After Effects", level: 92, icon: "Ae" },
+      { name: "Autodesk Maya", level: 85, icon: "Ma" },
+      { name: "Blender", level: 88, icon: "Bl" },
+      { name: "Marvelous Designer", level: 80, icon: "Md" },
+      { name: "Capcut", level: 85, icon: "Cc" },
+      { name: "Framer", level: 78, icon: "Fr" }
     ]
   },
 
@@ -961,12 +965,11 @@ export default function Portfolio() {
               <h3 className="text-xl font-bold text-pink-400 flex items-center gap-2 mb-6">
                 <Layers className="w-5 h-5" /> Dominio de Programas
               </h3>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
                 {PORTFOLIO_CONFIG.skills.software.map((sw, index) => (
                   <div key={index} className={`p-4 rounded-xl border text-center ${darkMode ? 'bg-neutral-900/60 border-white/5' : 'bg-white border-black/5'}`}>
                     <div className="text-indigo-400 text-lg font-black mb-1">{sw.icon}</div>
                     <div className="text-xs font-bold text-neutral-300">{sw.name}</div>
-                    <div className="text-[10px] text-neutral-500 mt-1">{sw.level}% experto</div>
                   </div>
                 ))}
               </div>
