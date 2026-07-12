@@ -180,19 +180,19 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: "proj-2",
-      title: "Monolith - Libro de Fotografía y Arquitectura",
-      category: "Editorial",
-      year: "2024",
-      client: "Museo de Arte Brutalista",
-      role: "Diseñador Editorial",
-      coverImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
-      description: "Libro de tapa dura de gran formato con un diseño de rejilla suizo estricto, jugando con contrastes tipográficos extremos y papeles texturizados de origen ecológico.",
+      title: "Santa Rita",
+      category: "Motion & 3D",
+      year: "2022 - 2024",
+      client: "Santa Rita",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}sr/media-sr.webm`,
+      description: "Producción de motion graphics, edición de video y diseño piezas gráficas para la marca Santa Rita. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
+        `${import.meta.env.BASE_URL}sr/media-sr.webm`,
+        `${import.meta.env.BASE_URL}sr/post-sr.jpg`,
+        `${import.meta.env.BASE_URL}sr/packaging-sr.jpg`
       ],
-      tools: ["Adobe InDesign", "Editorial Grid", "Ecolabel Textured Paper", "Serigraphy"]
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
       id: "proj-3",
