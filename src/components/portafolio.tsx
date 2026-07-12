@@ -38,7 +38,7 @@ const PORTFOLIO_CONFIG = {
     role: "Diseñadora gráfica Audiovisual",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600",
     aboutShort: "Director Creativo y Diseñador Gráfico con más de 8 años de experiencia creando identidades visuales premium y experiencias digitales sofisticadas para marcas líderes en todo el mundo.",
-    bio: "Me especializo en elevar marcas a través de una dirección creativa refinada, tipografías customizadas y composiciones minimalistas con alto impacto visual. Mi filosofía se basa en que el diseño premium no es lo que se añade, sino lo que no se puede simplificar más.",
+    bio: "Diseñadora gráfica y animadora de motion graphics con sólida experiencia en animación 3D y edición de video. Apasionada por la narrativa visual a través de diseños creativos e innovadores. Poseo habilidades avanzadas en software de diseño y animación, enfocándome en la originalidad y el impacto visual. Busco contribuir a equipos dinámicos que valoren la innovación, colaborando en proyectos que inspiren y sorprendan.",
     location: "Bogota, Colombia (Disponible para remoto internacional)",
     email: "Helentilaguyv@gmail.com",
     phone: "+57 3219620424",
