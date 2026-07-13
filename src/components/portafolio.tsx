@@ -324,6 +324,22 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: "proj-12",
+      title: "Death & Granny",
+      category: "Motion & 3D",
+      year: "2020",
+      client: "Death & Granny",
+      role: "Motion Designer & Modeladora 3D",
+      coverImage: `${import.meta.env.BASE_URL}dng/media-1.mp4`,
+      description: "Producción de motion graphics, modelado 3D y edición de video para el proyecto Death & Granny. Contenido audiovisual con animación 3D, texturizado y renderizado.",
+      gallery: [
+        `${import.meta.env.BASE_URL}dng/media-1.mp4`,
+        `${import.meta.env.BASE_URL}dng/post-1.jpg`,
+        `${import.meta.env.BASE_URL}dng/post-2.jpg`
+      ],
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator", "Maya", "Substance Painter"]
+    },
+    {
+      id: "proj-13",
       title: "Cubun - Videojuego WebGL",
       category: "Motion & 3D",
       year: "2024",
