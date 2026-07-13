@@ -244,18 +244,19 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: "proj-6",
-      title: "Nordic - Sistema Tipográfico Modular",
-      category: "Branding",
-      year: "2023",
-      client: "Nordic Fonts Foundry",
-      role: "Diseñador de Tipografía",
-      coverImage: "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&q=80&w=800",
-      description: "Diseño y desarrollo de una fuente sans-serif geométrica con terminaciones orgánicas, inspirada en las runas nórdicas y el diseño escandinavo de mediados de siglo.",
+      title: "Kala",
+      category: "Motion & 3D",
+      year: "2024 - 2026",
+      client: "Kala",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}kl/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Kala. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&q=80&w=800"
+        `${import.meta.env.BASE_URL}kl/media-1.mp4`,
+        `${import.meta.env.BASE_URL}kl/media-2.mp4`,
+        `${import.meta.env.BASE_URL}kl/post.jpg`
       ],
-      tools: ["Glyphs App", "Vector Refinement", "Kerning Optimization"]
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
       id: "proj-8",
