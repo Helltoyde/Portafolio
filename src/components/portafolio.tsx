@@ -243,12 +243,12 @@ const PORTFOLIO_CONFIG = {
       year: "2024 - 2025",
       client: "3 Cordilleras",
       role: "Motion Designer & Editora",
-      coverImage: `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Presentacion_2.webm`,
+      coverImage: `${import.meta.env.BASE_URL}v3c/media-1.mp4`,
       description: "Producción de motion graphics y edición de video para la marca 3 Cordilleras. Creación de contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Presentacion_2.webm`,
-        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Navidad_3C.webm`,
-        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_ia.webm`
+        `${import.meta.env.BASE_URL}v3c/media-1.mp4`,
+        `${import.meta.env.BASE_URL}v3c/media-2.mp4`,
+        `${import.meta.env.BASE_URL}v3c/media-3.mp4`
       ],
       tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
@@ -270,10 +270,10 @@ const PORTFOLIO_CONFIG = {
       year: "2022 - 2024",
       client: "Santa Rita",
       role: "Motion Designer & Editora",
-      coverImage: `${import.meta.env.BASE_URL}sr/media-sr.webm`,
+      coverImage: `${import.meta.env.BASE_URL}sr/media-1.mp4`,
       description: "Producción de motion graphics, edición de video y diseño piezas gráficas para la marca Santa Rita. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        `${import.meta.env.BASE_URL}sr/media-sr.webm`,
+        `${import.meta.env.BASE_URL}sr/media-1.mp4`,
         `${import.meta.env.BASE_URL}sr/post-sr.jpg`,
         `${import.meta.env.BASE_URL}sr/packaging-sr.jpg`
       ],
