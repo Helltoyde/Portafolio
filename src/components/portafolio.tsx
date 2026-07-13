@@ -308,6 +308,22 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: "proj-11",
+      title: "Snow",
+      category: "Motion & 3D",
+      year: "2026",
+      client: "Snow",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}snw/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Snow. Contenido audiovisual para campañas de comunicación y redes sociales.",
+      gallery: [
+        `${import.meta.env.BASE_URL}snw/media-1.mp4`,
+        `${import.meta.env.BASE_URL}snw/media-2.mp4`,
+        `${import.meta.env.BASE_URL}snw/media-3.mp4`
+      ],
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
+    },
+    {
+      id: "proj-12",
       title: "Cubun - Videojuego WebGL",
       category: "Motion & 3D",
       year: "2024",
