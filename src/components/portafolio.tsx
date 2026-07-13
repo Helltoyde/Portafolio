@@ -478,6 +478,7 @@ export default function Portfolio() {
   const [loading, setLoading] = useState(true);
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
+  const [fullscreenMedia, setFullscreenMedia] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("experience"); // "experience" | "education" | "certifications"
   const [cursorPos, setCursorPos] = useState({ x: -100, y: -100 });
@@ -1053,12 +1054,15 @@ export default function Portfolio() {
               
               {/* Carrusel de Galería (Lado Izquierdo) */}
               <div className="lg:col-span-7 bg-neutral-950 p-6 flex flex-col justify-center gap-4">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-inner">
+                <div 
+                  className="aspect-[4/3] rounded-2xl overflow-hidden shadow-inner cursor-pointer group relative"
+                  onClick={() => setFullscreenMedia(selectedProject.coverImage)}
+                >
                   {selectedProject.coverImage.endsWith('.webm') || selectedProject.coverImage.endsWith('.mp4') ? (
                     <video 
                       src={selectedProject.coverImage} 
-                      controls
                       className="w-full h-full object-cover"
+                      autoPlay loop muted playsInline preload="metadata"
                     />
                   ) : (
                     <img 
@@ -1067,15 +1071,20 @@ export default function Portfolio() {
                       className="w-full h-full object-cover"
                     />
                   )}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all flex items-center justify-center pointer-events-none">
+                    <svg className="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
                 </div>
                 {/* Muestras extras si existen */}
                 <div className="grid grid-cols-2 gap-4">
                   {selectedProject.gallery.map((media, i) => (
-                    <div key={i} className="aspect-[4/3] rounded-xl overflow-hidden">
+                    <div key={i} className="aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group relative" onClick={() => setFullscreenMedia(media)}>
                       {media.endsWith('.webm') || media.endsWith('.mp4') ? (
                         <video 
                           src={media} 
-                          className="w-full h-full object-cover hover:scale-105 transition-all"
+                          className="w-full h-full object-cover transition-all"
                           autoPlay 
                           loop 
                           muted 
@@ -1083,8 +1092,13 @@ export default function Portfolio() {
                           preload="metadata"
                         />
                       ) : (
-                        <img src={media} alt={`Visualización ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-all" />
+                        <img src={media} alt={`Visualización ${i + 1}`} className="w-full h-full object-cover transition-all" />
                       )}
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all flex items-center justify-center pointer-events-none">
+                        <svg className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                        </svg>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -1164,6 +1178,36 @@ export default function Portfolio() {
 
             </div>
 
+          </div>
+        </div>
+      )}
+
+      {/* FULLSCREEN MEDIA VIEWER */}
+      {fullscreenMedia && (
+        <div className="fixed inset-0 z-[200] bg-black/95 flex items-center justify-center p-6" onClick={() => setFullscreenMedia(null)}>
+          <button 
+            onClick={() => setFullscreenMedia(null)}
+            className="absolute top-6 right-6 z-10 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all"
+          >
+            <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <div className="w-full h-full flex items-center justify-center" onClick={e => e.stopPropagation()}>
+            {fullscreenMedia.endsWith('.webm') || fullscreenMedia.endsWith('.mp4') ? (
+              <video 
+                src={fullscreenMedia} 
+                controls 
+                autoPlay
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+            ) : (
+              <img 
+                src={fullscreenMedia} 
+                alt="Vista completa" 
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+            )}
           </div>
         </div>
       )}
