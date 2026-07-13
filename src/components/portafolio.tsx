@@ -292,6 +292,22 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: "proj-10",
+      title: "La Cantera",
+      category: "Motion & 3D",
+      year: "2026",
+      client: "La Cantera",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}cntra/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca La Cantera. Contenido audiovisual para campañas de comunicación y redes sociales.",
+      gallery: [
+        `${import.meta.env.BASE_URL}cntra/media-1.mp4`,
+        `${import.meta.env.BASE_URL}cntra/media-2.mp4`,
+        `${import.meta.env.BASE_URL}cntra/media-3.mp4`
+      ],
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
+    },
+    {
+      id: "proj-11",
       title: "Cubun - Videojuego WebGL",
       category: "Motion & 3D",
       year: "2024",
