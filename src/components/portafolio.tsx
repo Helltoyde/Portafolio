@@ -260,6 +260,22 @@ const PORTFOLIO_CONFIG = {
     },
     {
       id: "proj-8",
+      title: "Skala",
+      category: "Motion & 3D",
+      year: "2024 - 2026",
+      client: "Skala",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}skl/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Skala. Contenido audiovisual para campañas de comunicación y redes sociales.",
+      gallery: [
+        `${import.meta.env.BASE_URL}skl/media-1.mp4`,
+        `${import.meta.env.BASE_URL}skl/media-2.mp4`,
+        `${import.meta.env.BASE_URL}skl/post.jpg`
+      ],
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
+    },
+    {
+      id: "proj-9",
       title: "Cubun - Videojuego WebGL",
       category: "Motion & 3D",
       year: "2024",
@@ -267,7 +283,7 @@ const PORTFOLIO_CONFIG = {
       role: "Desarrolladora & Diseñadora",
       coverImage: "https://img.itch.zone/aW1nLzQwOTI4NzcucG5n/347x500/FHCzVD.png",
       description: "Juego WebGL de ficción interactiva desarrollado en Unity. Salva el ecosistema recolectando todos los cubun.",
-      embed: '<div style="position: relative; padding-bottom: 70.2%; height: 0; overflow: hidden;"><iframe frameborder="0" src="https://itch.io/embed-upload/2621579?color=ffffff" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"><a href="https://sebastianneuto.itch.io/cubun">Play Cubun on itch.io</a></iframe></div>',
+      embed: '<iframe frameborder="0" src="https://itch.io/embed-upload/2621579?color=ffffff" allowfullscreen="" width="980" height="688"><a href="https://sebastianneuto.itch.io/cubun">Play Cubun on itch.io</a></iframe>',
       gallery: [],
       tools: ["Unity", "WebGL", "Interactive Fiction"]
     }
