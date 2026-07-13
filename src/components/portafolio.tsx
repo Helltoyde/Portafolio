@@ -163,89 +163,53 @@ const PORTFOLIO_CONFIG = {
 
   projects: [
     {
-      id: "proj-1",
-      title: "3 Cordilleras",
-
-      year: "2024 - 2025",
-      client: "3 Cordilleras",
+      id: "proj-11",
+      title: "Snow",
+      year: "2026",
+      client: "Snow",
       role: "Motion Designer & Editora",
-      coverImage: `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Presentacion_2.webm`,
-      description: "Producción de motion graphics y edición de video para la marca 3 Cordilleras. Creación de contenido audiovisual para campañas de comunicación y redes sociales.",
+      coverImage: `${import.meta.env.BASE_URL}snw/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Snow. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Presentacion_2.webm`,
-        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Navidad_3C.webm`,
-        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_ia.webm`
+        `${import.meta.env.BASE_URL}snw/media-1.mp4`,
+        `${import.meta.env.BASE_URL}snw/media-2.mp4`,
+        `${import.meta.env.BASE_URL}snw/media-3.mp4`
       ],
       tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
-      id: "proj-2",
-      title: "Santa Rita",
-
-      year: "2022 - 2024",
-      client: "Santa Rita",
+      id: "proj-10",
+      title: "La Cantera",
+      year: "2026",
+      client: "La Cantera",
       role: "Motion Designer & Editora",
-      coverImage: `${import.meta.env.BASE_URL}sr/media-sr.webm`,
-      description: "Producción de motion graphics, edición de video y diseño piezas gráficas para la marca Santa Rita. Contenido audiovisual para campañas de comunicación y redes sociales.",
+      coverImage: `${import.meta.env.BASE_URL}cntra/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca La Cantera. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        `${import.meta.env.BASE_URL}sr/media-sr.webm`,
-        `${import.meta.env.BASE_URL}sr/post-sr.jpg`,
-        `${import.meta.env.BASE_URL}sr/packaging-sr.jpg`
+        `${import.meta.env.BASE_URL}cntra/media-1.mp4`,
+        `${import.meta.env.BASE_URL}cntra/media-2.mp4`,
+        `${import.meta.env.BASE_URL}cntra/media-3.mp4`
       ],
       tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
-      id: "proj-3",
-      title: "Caribeño",
-
-      year: "2022 - 2024",
-      client: "Caribeño",
+      id: "proj-9",
+      title: "Chispa",
+      year: "2024 - 2026",
+      client: "Chispa",
       role: "Motion Designer & Editora",
-      coverImage: `${import.meta.env.BASE_URL}crb/media-1.mp4`,
-      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Caribeño. Contenido audiovisual para campañas de comunicación y redes sociales.",
+      coverImage: `${import.meta.env.BASE_URL}chsp/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Chispa. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        `${import.meta.env.BASE_URL}crb/media-1.mp4`,
-        `${import.meta.env.BASE_URL}crb/media-2.mp4`,
-        `${import.meta.env.BASE_URL}crb/post.jpg`
-      ],
-      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
-    },
-    {
-      id: "proj-4",
-      title: "Carnelly",
-
-      year: "2022 - 2023",
-      client: "Carnelly",
-      role: "Motion Designer & Editora",
-      coverImage: `${import.meta.env.BASE_URL}crnl/media-1.mp4`,
-      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Carnelly. Contenido audiovisual para campañas de comunicación y redes sociales.",
-      gallery: [
-        `${import.meta.env.BASE_URL}crnl/media-1.mp4`,
-        `${import.meta.env.BASE_URL}crnl/media-2.mp4`,
-        `${import.meta.env.BASE_URL}crnl/media-3.mp4`
-      ],
-      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
-    },
-    {
-      id: "proj-5",
-      title: "Casablanca",
-
-      year: "2022 - 2023",
-      client: "Casablanca",
-      role: "Motion Designer & Editora",
-      coverImage: `${import.meta.env.BASE_URL}csbln/media-1.mp4`,
-      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Casablanca. Contenido audiovisual para campañas de comunicación y redes sociales.",
-      gallery: [
-        `${import.meta.env.BASE_URL}csbln/media-1.mp4`,
-        `${import.meta.env.BASE_URL}csbln/media-2.mp4`,
-        `${import.meta.env.BASE_URL}csbln/media-3.mp4`
+        `${import.meta.env.BASE_URL}chsp/media-1.mp4`,
+        `${import.meta.env.BASE_URL}chsp/media-2.mp4`,
+        `${import.meta.env.BASE_URL}chsp/media-3.mp4`
       ],
       tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
       id: "proj-6",
       title: "Kala",
-
       year: "2024 - 2026",
       client: "Kala",
       role: "Motion Designer & Editora",
@@ -261,7 +225,6 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-8",
       title: "Skala",
-
       year: "2024 - 2026",
       client: "Skala",
       role: "Motion Designer & Editora",
@@ -275,57 +238,95 @@ const PORTFOLIO_CONFIG = {
       tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
-      id: "proj-9",
-      title: "Chispa",
-
-      year: "2024 - 2026",
-      client: "Chispa",
+      id: "proj-1",
+      title: "3 Cordilleras",
+      year: "2024 - 2025",
+      client: "3 Cordilleras",
       role: "Motion Designer & Editora",
-      coverImage: `${import.meta.env.BASE_URL}chsp/media-1.mp4`,
-      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Chispa. Contenido audiovisual para campañas de comunicación y redes sociales.",
+      coverImage: `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Presentacion_2.webm`,
+      description: "Producción de motion graphics y edición de video para la marca 3 Cordilleras. Creación de contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        `${import.meta.env.BASE_URL}chsp/media-1.mp4`,
-        `${import.meta.env.BASE_URL}chsp/media-2.mp4`,
-        `${import.meta.env.BASE_URL}chsp/media-3.mp4`
+        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Presentacion_2.webm`,
+        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_Video_Navidad_3C.webm`,
+        `${import.meta.env.BASE_URL}v3c/vive_3_cordilleras_ia.webm`
       ],
       tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
-      id: "proj-10",
-      title: "La Cantera",
-
-      year: "2026",
-      client: "La Cantera",
+      id: "proj-13",
+      title: "Cubun - Videojuego WebGL",
+      year: "2024",
+      client: "Tostacazoth",
+      role: "Desarrolladora & Diseñadora",
+      coverImage: "https://img.itch.zone/aW1nLzQwOTI4NzcucG5n/347x500/FHCzVD.png",
+      description: "Juego WebGL de ficción interactiva desarrollado en Unity. Salva el ecosistema recolectando todos los cubun.",
+      embed: '<iframe frameborder="0" src="https://itch.io/embed-upload/2621579?color=ffffff" allowfullscreen="" width="980" height="688"><a href="https://sebastianneuto.itch.io/cubun">Play Cubun on itch.io</a></iframe>',
+      gallery: [],
+      tools: ["Unity", "WebGL", "Interactive Fiction"]
+    },
+    {
+      id: "proj-2",
+      title: "Santa Rita",
+      year: "2022 - 2024",
+      client: "Santa Rita",
       role: "Motion Designer & Editora",
-      coverImage: `${import.meta.env.BASE_URL}cntra/media-1.mp4`,
-      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca La Cantera. Contenido audiovisual para campañas de comunicación y redes sociales.",
+      coverImage: `${import.meta.env.BASE_URL}sr/media-sr.webm`,
+      description: "Producción de motion graphics, edición de video y diseño piezas gráficas para la marca Santa Rita. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        `${import.meta.env.BASE_URL}cntra/media-1.mp4`,
-        `${import.meta.env.BASE_URL}cntra/media-2.mp4`,
-        `${import.meta.env.BASE_URL}cntra/media-3.mp4`
+        `${import.meta.env.BASE_URL}sr/media-sr.webm`,
+        `${import.meta.env.BASE_URL}sr/post-sr.jpg`,
+        `${import.meta.env.BASE_URL}sr/packaging-sr.jpg`
       ],
       tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
-      id: "proj-11",
-      title: "Snow",
-
-      year: "2026",
-      client: "Snow",
+      id: "proj-3",
+      title: "Caribeño",
+      year: "2022 - 2024",
+      client: "Caribeño",
       role: "Motion Designer & Editora",
-      coverImage: `${import.meta.env.BASE_URL}snw/media-1.mp4`,
-      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Snow. Contenido audiovisual para campañas de comunicación y redes sociales.",
+      coverImage: `${import.meta.env.BASE_URL}crb/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Caribeño. Contenido audiovisual para campañas de comunicación y redes sociales.",
       gallery: [
-        `${import.meta.env.BASE_URL}snw/media-1.mp4`,
-        `${import.meta.env.BASE_URL}snw/media-2.mp4`,
-        `${import.meta.env.BASE_URL}snw/media-3.mp4`
+        `${import.meta.env.BASE_URL}crb/media-1.mp4`,
+        `${import.meta.env.BASE_URL}crb/media-2.mp4`,
+        `${import.meta.env.BASE_URL}crb/post.jpg`
+      ],
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
+    },
+    {
+      id: "proj-4",
+      title: "Carnelly",
+      year: "2022 - 2023",
+      client: "Carnelly",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}crnl/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Carnelly. Contenido audiovisual para campañas de comunicación y redes sociales.",
+      gallery: [
+        `${import.meta.env.BASE_URL}crnl/media-1.mp4`,
+        `${import.meta.env.BASE_URL}crnl/media-2.mp4`,
+        `${import.meta.env.BASE_URL}crnl/media-3.mp4`
+      ],
+      tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
+    },
+    {
+      id: "proj-5",
+      title: "Casablanca",
+      year: "2022 - 2023",
+      client: "Casablanca",
+      role: "Motion Designer & Editora",
+      coverImage: `${import.meta.env.BASE_URL}csbln/media-1.mp4`,
+      description: "Producción de motion graphics, edición de video y diseño de piezas gráficas para la marca Casablanca. Contenido audiovisual para campañas de comunicación y redes sociales.",
+      gallery: [
+        `${import.meta.env.BASE_URL}csbln/media-1.mp4`,
+        `${import.meta.env.BASE_URL}csbln/media-2.mp4`,
+        `${import.meta.env.BASE_URL}csbln/media-3.mp4`
       ],
       tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator"]
     },
     {
       id: "proj-12",
       title: "Death & Granny",
-
       year: "2020",
       client: "Death & Granny",
       role: "Motion Designer & Modeladora 3D",
@@ -337,19 +338,6 @@ const PORTFOLIO_CONFIG = {
         `${import.meta.env.BASE_URL}dng/post-2.jpg`
       ],
       tools: ["Adobe After Effects", "Adobe Premiere", "Photoshop", "Illustrator", "Maya", "Substance Painter"]
-    },
-    {
-      id: "proj-13",
-      title: "Cubun - Videojuego WebGL",
-
-      year: "2024",
-      client: "Tostacazoth",
-      role: "Desarrolladora & Diseñadora",
-      coverImage: "https://img.itch.zone/aW1nLzQwOTI4NzcucG5n/347x500/FHCzVD.png",
-      description: "Juego WebGL de ficción interactiva desarrollado en Unity. Salva el ecosistema recolectando todos los cubun.",
-      embed: '<iframe frameborder="0" src="https://itch.io/embed-upload/2621579?color=ffffff" allowfullscreen="" width="980" height="688"><a href="https://sebastianneuto.itch.io/cubun">Play Cubun on itch.io</a></iframe>',
-      gallery: [],
-      tools: ["Unity", "WebGL", "Interactive Fiction"]
     }
   ],
 
