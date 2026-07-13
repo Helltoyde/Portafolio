@@ -165,7 +165,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-1",
       title: "3 Cordilleras",
-      category: "Motion & 3D",
+
       year: "2024 - 2025",
       client: "3 Cordilleras",
       role: "Motion Designer & Editora",
@@ -181,7 +181,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-2",
       title: "Santa Rita",
-      category: "Motion & 3D",
+
       year: "2022 - 2024",
       client: "Santa Rita",
       role: "Motion Designer & Editora",
@@ -197,7 +197,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-3",
       title: "Caribeño",
-      category: "Motion & 3D",
+
       year: "2022 - 2024",
       client: "Caribeño",
       role: "Motion Designer & Editora",
@@ -213,7 +213,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-4",
       title: "Carnelly",
-      category: "Motion & 3D",
+
       year: "2022 - 2023",
       client: "Carnelly",
       role: "Motion Designer & Editora",
@@ -229,7 +229,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-5",
       title: "Casablanca",
-      category: "Motion & 3D",
+
       year: "2022 - 2023",
       client: "Casablanca",
       role: "Motion Designer & Editora",
@@ -245,7 +245,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-6",
       title: "Kala",
-      category: "Motion & 3D",
+
       year: "2024 - 2026",
       client: "Kala",
       role: "Motion Designer & Editora",
@@ -261,7 +261,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-8",
       title: "Skala",
-      category: "Motion & 3D",
+
       year: "2024 - 2026",
       client: "Skala",
       role: "Motion Designer & Editora",
@@ -277,7 +277,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-9",
       title: "Chispa",
-      category: "Motion & 3D",
+
       year: "2024 - 2026",
       client: "Chispa",
       role: "Motion Designer & Editora",
@@ -293,7 +293,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-10",
       title: "La Cantera",
-      category: "Motion & 3D",
+
       year: "2026",
       client: "La Cantera",
       role: "Motion Designer & Editora",
@@ -309,7 +309,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-11",
       title: "Snow",
-      category: "Motion & 3D",
+
       year: "2026",
       client: "Snow",
       role: "Motion Designer & Editora",
@@ -325,7 +325,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-12",
       title: "Death & Granny",
-      category: "Motion & 3D",
+
       year: "2020",
       client: "Death & Granny",
       role: "Motion Designer & Modeladora 3D",
@@ -341,7 +341,7 @@ const PORTFOLIO_CONFIG = {
     {
       id: "proj-13",
       title: "Cubun - Videojuego WebGL",
-      category: "Motion & 3D",
+
       year: "2024",
       client: "Tostacazoth",
       role: "Desarrolladora & Diseñadora",
@@ -532,17 +532,12 @@ export default function Portfolio() {
 
   // Filtrado de proyectos del portafolio
   const filteredProjects = useMemo(() => {
-    if (activeCategory === "All") return PORTFOLIO_CONFIG.projects;
-    return PORTFOLIO_CONFIG.projects.filter(proj => 
-      proj.category.toLowerCase().includes(activeCategory.toLowerCase()) || 
-      activeCategory.toLowerCase().includes(proj.category.toLowerCase())
-    );
+    return PORTFOLIO_CONFIG.projects;
   }, [activeCategory]);
 
   // Lista de categorías únicas del archivo de datos
   const categories = useMemo(() => {
-    const list = new Set(PORTFOLIO_CONFIG.projects.map(p => p.category));
-    return ["All", ...Array.from(list)];
+    return ["All"];
   }, []);
 
   // Manejar el envío simulado del formulario con alta fidelidad
@@ -1005,9 +1000,11 @@ export default function Portfolio() {
                     </div>
                   </div>
                   {/* Categoría flotante en la foto */}
-                  <span className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-[#0a0a0c]/80 backdrop-blur-md text-[10px] font-bold tracking-widest uppercase text-indigo-400 border border-white/10">
-                    {project.category}
-                  </span>
+                  {project.category && (
+                    <span className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-[#0a0a0c]/80 backdrop-blur-md text-[10px] font-bold tracking-widest uppercase text-indigo-400 border border-white/10">
+                      {project.category}
+                    </span>
+                  )}
                 </div>
 
                 {/* Info básica inferior */}
@@ -1097,9 +1094,11 @@ export default function Portfolio() {
               <div className="lg:col-span-5 p-8 md:p-10 flex flex-col justify-between space-y-8">
                 <div className="space-y-6">
                   <div>
-                    <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20">
-                      {selectedProject.category}
-                    </span>
+                    {selectedProject.category && (
+                      <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20">
+                        {selectedProject.category}
+                      </span>
+                    )}
                     <h2 className="text-3xl font-bold tracking-tight mt-4">{selectedProject.title}</h2>
                   </div>
 
