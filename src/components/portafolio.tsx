@@ -42,7 +42,7 @@ const PORTFOLIO_CONFIG = {
     location: "Bogota, Colombia (Disponible para remoto internacional)",
     email: "Helentilaguyv@gmail.com",
     phone: "+57 3219620424",
-    resumeUrl: "/Helen-Tilaguy-CV.pdf",
+    resumeUrl: `${import.meta.env.BASE_URL}Helen-Tilaguy-CV.pdf`,
     stats: [
       { label: "Años de Experiencia", value: "5+" },
       { label: "Proyectos de Animación", value: "80+" },
@@ -756,6 +756,7 @@ export default function Portfolio() {
               </a>
               <a 
                 href={PORTFOLIO_CONFIG.personal.resumeUrl} 
+                download
                 className={`px-8 py-4 rounded-xl font-bold border flex items-center gap-2 transition-all transform hover:-translate-y-1 ${
                   darkMode 
                     ? 'bg-neutral-900/60 border-white/10 text-white hover:bg-neutral-800' 
