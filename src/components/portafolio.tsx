@@ -1000,12 +1000,7 @@ export default function Portfolio() {
                       <Maximize2 className="w-6 h-6" />
                     </div>
                   </div>
-                  {/* Categoría flotante en la foto */}
-                  {project.category && (
-                    <span className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-[#0a0a0c]/80 backdrop-blur-md text-[10px] font-bold tracking-widest uppercase text-indigo-400 border border-white/10">
-                      {project.category}
-                    </span>
-                  )}
+
                 </div>
 
                 {/* Info básica inferior */}
@@ -1108,12 +1103,7 @@ export default function Portfolio() {
               <div className="lg:col-span-5 p-8 md:p-10 flex flex-col justify-between space-y-8">
                 <div className="space-y-6">
                   <div>
-                    {selectedProject.category && (
-                      <span className="text-indigo-400 text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20">
-                        {selectedProject.category}
-                      </span>
-                    )}
-                    <h2 className="text-3xl font-bold tracking-tight mt-4">{selectedProject.title}</h2>
+                    <h2 className="text-3xl font-bold tracking-tight">{selectedProject.title}</h2>
                   </div>
 
                   <p className="text-sm text-neutral-400 leading-relaxed">
